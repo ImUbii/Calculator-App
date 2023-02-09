@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="calculator">
+            <div class="screen" id="screen"> </div>
+            <div class="buttons">
+                <button type="button" class="btn-op" onclick="clearCurrent()">CE</button>
+                <button type="button" class="btn-op" onclick="reset()">C</button>
+                <button type="button" class="btn-op" onclick="backspace()">⇐</button>
+                <button type="button" class="btn-op" onclick="inputOp('/')">/</button>
+                <button type="button" class="btn-num" onclick="input(7)">7</button>
+                <button type="button" class="btn-num" onclick="input(8)">8</button>
+                <button type="button" class="btn-num" onclick="input(9)">9</button>
+                <button type="button" class="btn-op" onclick="inputOp('*')">*</button>
+                <button type="button" class="btn-num" onclick="input(4)">4</button>
+                <button type="button" class="btn-num" onclick="input(5)">5</button>
+                <button type="button" class="btn-num" onclick="input(6)">6</button>
+                <button type="button" class="btn-op" onclick="inputOp('-')">-</button>
+                <button type="button" class="btn-num" onclick="input(1)">1</button>
+                <button type="button" class="btn-num" onclick="input(2)">2</button>
+                <button type="button" class="btn-num" onclick="input(3)">3</button>
+                <button type="button" class="btn-op" onclick="inputOp('+')">+</button>
+                <button type="button" class="btn-op" onclick="negate()">+/-</button>
+                <button type="button" class="btn-num" onclick="input(0)">0</button>
+                <button type="button" class="btn-op" onclick="input('.')">.</button>
+                <button type="button" class="btn-op" onclick="equals()">=</button>
+            </div>
+        </section>
+        <script src="calculator.js"></script>
+    </body>
+</html>
